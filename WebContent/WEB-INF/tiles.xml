@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+	<definition name="base.definition" template="Layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/Header.jsp" />
+		<put-attribute name="menu" value="/Menu.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/Footer.jsp" />		
+	</definition>
+
+	<definition name="home.definition" extends="base.definition">
+		<put-attribute name="title" value="Home Page" />
+		<put-attribute name="body" value="/content.jsp" />
+	</definition>
+
+	<definition name="location.definition" extends="base.definition">
+		<put-attribute name="title" value="Location Details" />
+		<put-attribute name="body" value="/hublocation.jsp" />
+	</definition>
+
+	<definition name="vehiclecat.definition" extends="base.definition">
+		<put-attribute name="title" value="Vehicle Category Details" />
+		<put-attribute name="body" value="/vehiclecategory.jsp" />
+	</definition>	
+	
+	<definition name="addons.definition" extends="base.definition">
+		<put-attribute name="title" value="Add Ons Details" />
+		<put-attribute name="body" value="/addons.jsp" />
+	</definition>
+	
+	<definition name="login.definition" extends="base.definition">
+		<put-attribute name="title" value="Login Page" />
+		<put-attribute name="body" value="/login.jsp" />
+	</definition>
+	
+	<definition name="confirm.definition" extends="base.definition">
+		<put-attribute name="title" value="Confirm Page" />
+		<put-attribute name="body" value="/confirm.jsp" />
+	</definition>
+		
+	<definition name="register.definition" extends="base.definition">
+		<put-attribute name="title" value="Registration Page" />
+		<put-attribute name="body" value="/register.jsp" />
+	</definition>
+
+</tiles-definitions>
