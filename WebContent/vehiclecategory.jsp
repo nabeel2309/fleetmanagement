@@ -18,43 +18,39 @@
 }
 </style>
 </head>
-<body>
-	<div class="panel panel-default" id="bgimg">
-		<div class="panel-body">
-			<div class="container">
-				<h1 align="center">
-					<b>Vehicle Category Selection</b>
-				</h1>
-				<form:form commandName="mybooking" method="post">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Select</th>
-								<th>Vehicle Type</th>
-								<th>Car Image</th>
-								<th>Daily Rate</th>
-								<th>Weekly Rate</th>
-								<th>Monthly Rate</th>
-							</tr>
-						</thead>
-						<tbody>
-							<c:forEach items="${myvehicles}" var="x">
-								<tr>
-									<td><input type="radio" name="rdv1"
-										value="${x.vehiclecategoryid}" /></td>
-									<td>${x.vehiclecategorydesc}</td>
-									<td><img src="${x.imagepattern}" height="105" width="180" /></td>
-									<td>${x.dailyrate}</td>
-									<td>${x.weeklyrate}</td>
-									<td>${x.monthlyrate}</td>
-								</tr>
-							</c:forEach>
-						</tbody>
-					</table>
-					<input class="btn btn-info" type="submit" value="Continue Booking" />
-				</form:form>
-			</div>
-		</div>
+<body background="vehicle_background.jpg">
+	<div class="container" style="color: #fff;">
+		<h1 align="center">
+			<b>Vehicle Category Selection</b>
+		</h1>
+		<form:form commandName="mybooking" method="post">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Select</th>
+						<th>Vehicle Type</th>
+						<th>Car Image</th>
+						<th>Daily Rate</th>
+						<th>Weekly Rate</th>
+						<th>Monthly Rate</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach items="${myvehicles}" var="x">
+						<tr>
+							<td><input type="radio" name="rdv1"
+								value="${x.vehiclecategoryid}" /></td>
+							<td>${x.vehiclecategorydesc}</td>
+							<td><img src="${x.imagepattern}" height="105" width="180" /></td>
+							<td>${x.dailyrate}</td>
+							<td>${x.weeklyrate}</td>
+							<td>${x.monthlyrate}</td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+			<input class="btn btn-info" type="submit" value="Continue Booking" />
+		</form:form>
 	</div>
 </body>
 </html>

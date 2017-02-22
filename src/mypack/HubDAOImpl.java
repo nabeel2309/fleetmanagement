@@ -34,4 +34,18 @@ public class HubDAOImpl implements HubDAO
 		return list;
 	}
 
+	@Override
+	public Hub getHub(int hubid)
+	{
+		Hub b=new Hub();
+		String query="select k from Hub k where k.hubid=?";
+		Object[] queryParam={hubid};
+		list=template.find(query,queryParam);
+		for(Hub h : list)
+		{
+			b=h;
+		}
+		return b;
+	}
+
 }

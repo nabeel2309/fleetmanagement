@@ -18,68 +18,64 @@
 }
 </style>
 </head>
-<body>
-	<div class="panel panel-default" id="bgimg">
-		<div class="panel-body">
-			<div class="container">
-				<h1 align="center">
-					<b>Hub Location Selection</b>
-				</h1>
-				<form:form commandName="mybooking" method="post">
-					<h2 align="center">Select Pickup Location</h2>
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Select</th>
-								<th>Hub Name</th>
-								<th>Address</th>
-								<th>City</th>
-								<th>State</th>
-								<th>Telephone</th>
-							</tr>
-						</thead>
-						<tbody>
-							<c:forEach items="${hublist}" var="x">
-								<tr>
-									<td><input type="radio" name="rd1" value="${x.hubid}" /></td>
-									<td>${x.hubname}</td>
-									<td>${x.hubaddress}</td>
-									<td>${x.cityname}</td>
-									<td>${x.statename}</td>
-									<td>${x.hubphone}</td>
-								</tr>
-							</c:forEach>
-						</tbody>
-					</table>
-					<h2 align="center">Select Return Location</h2>
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Select</th>
-								<th>Hub Name</th>
-								<th>Address</th>
-								<th>City</th>
-								<th>State</th>
-								<th>Telephone</th>
-							</tr>
-						</thead>
-						<tbody>
-							<c:forEach items="${rhublist}" var="y">
-								<tr>
-									<td><input type="radio" name="rd2" value="${y.hubid}" /></td>
-									<td>${y.hubname}</td>
-									<td>${y.hubaddress}</td>
-									<td>${y.cityname}</td>
-									<td>${y.statename}</td>
-									<td>${y.hubphone}</td>
-								</tr>
-							</c:forEach>
-						</tbody>
-					</table>
-					<input type="submit" class="btn btn-info" value="Continue Booking" />
-				</form:form>
-			</div>
-		</div>
+<body background="hub_background.jpg">
+	<div class="container" style="color: #fff;">
+		<h1 align="center">
+			<b>Hub Location Selection</b>
+		</h1>
+		<form:form commandName="mybooking" method="post">
+			<h2 align="center">Select Pickup Location</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Select</th>
+						<th>Hub Name</th>
+						<th>Address</th>
+						<th>City</th>
+						<th>State</th>
+						<th>Telephone</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach items="${hublist}" var="x">
+						<tr>
+							<td><input type="radio" name="rd1" value="${x.hubid}" /></td>
+							<td>${x.hubname}</td>
+							<td>${x.hubaddress}</td>
+							<td>${x.cityname}</td>
+							<td>${x.statename}</td>
+							<td>${x.hubphone}</td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+			<h2 align="center">Select Return Location</h2>
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Select</th>
+						<th>Hub Name</th>
+						<th>Address</th>
+						<th>City</th>
+						<th>State</th>
+						<th>Telephone</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach items="${rhublist}" var="y">
+						<tr>
+							<td><input type="radio" name="rd2" value="${y.hubid}" /></td>
+							<td>${y.hubname}</td>
+							<td>${y.hubaddress}</td>
+							<td>${y.cityname}</td>
+							<td>${y.statename}</td>
+							<td>${y.hubphone}</td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+			<input type="submit" class="btn btn-info" value="Continue Booking" />
+		</form:form>
 	</div>
 </body>
 </html>

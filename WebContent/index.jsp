@@ -485,7 +485,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
   <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-  <p>Copyright &copy; Safar Inc. 2016. All rights reserved.</p>
+  <p>Copyright &copy; Safar Inc. 2017. All rights reserved.</p>
 </footer>
 
 <script>

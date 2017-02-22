@@ -7,4 +7,5 @@ public interface BookingDAO
 	public void addVehicleCategory(Booking b);
 	public void addAddOns(Booking b);
 	public void updateCustomerid(Booking b);
+	public Booking getBooking(int bookingid);
 }

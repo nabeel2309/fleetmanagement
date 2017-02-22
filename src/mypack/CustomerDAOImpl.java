@@ -35,4 +35,10 @@ public class CustomerDAOImpl implements CustomerDAO
 		return list;
 	}
 
+	@Override
+	public void insertRegisterId(Customer c)
+	{
+		template.save(c);
+	}
+
 }

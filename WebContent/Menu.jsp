@@ -32,21 +32,21 @@
 	background-color: red !important;
 }
 .navbar {
-	font-family: Montserrat, sans-serif;
-	margin-bottom: 0;
-	background-color: #2d2d30;
-	border: 0;
-	font-size: 11px;
-	letter-spacing: 4px;
-	opacity: 0.9;
+	font-family: Montserrat, sans-serif !important;
+	margin-bottom: 0 !important;
+	background-color: #2d2d30 !important;
+	border: 0 !important;
+	font-size: 11px !important;
+	letter-spacing: 4px !important;
+	opacity: 0.9 !important;
 }
 
 .navbar li a, .navbar .navbar-brand {
-	color: #d5d5d5;
+	color: #d5d5d5 !important;
 }
 
 .navbar-nav li a:hover {
-	color: #fff;
+	color: #fff !important;
 }
 
 .navbar-nav li.active a {
@@ -55,7 +55,7 @@
 }
 
 .navbar-default .navbar-toggle {
-	border-color: transparent;
+	border-color: transparent !important;
 }
 </style>
 </head>
@@ -78,15 +78,7 @@
 					<li><a href="aboutus.jsp">ABOUT</a></li>
 					<li><a href="login.do">LOGIN</a></li>
 					<li><a href="register.do">SIGN UP</a></li>
-					<li class="dropdown"><a class="dropdown-toggle"
-						data-toggle="dropdown" href="#">MORE <span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Vechicle categories</a></li>
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Add Ons</a></li>
-							<li><a href="#">Gallery</a></li>
-							<li><a href="#">Contact</a></li>
-						</ul></li>
+					<li><a href="stafflogin.do">STAFF</a></li>
 					<li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
 				</ul>
 			</div>

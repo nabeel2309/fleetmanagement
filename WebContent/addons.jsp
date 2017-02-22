@@ -38,43 +38,41 @@
 	}
 </script>
 </head>
-<body onload="ready()">
-	<div class="panel panel-default" id="bgimg">
-		<div class="panel-body">
-			<div class="container">
-				<h1 align="center">
-					<b>Add Ons Selection</b>
-				</h1>
-				<form:form commandName="mybooking" method="post">
-					<table class="table">
-						<thead>
-							<tr>
-								<th>Select</th>
-								<th>AddOns Type</th>
-								<th>AddOns Cost</th>
-								<th>Quantity</th>
-							</tr>
-						</thead>
-						<tbody>
-							<c:forEach items="${addonslist}" var="x">
-								<tr>
-									<td><input type="checkbox" onclick="calculate(this)"
-										value="${x.addonscost}" /></td>
-									<td>${x.addonstype}</td>
-									<td>${x.addonscost}</td>
-									<td><input type="number" style="color: #000;"
-										onchange="quantity(this)" /></td>
-								</tr>
-							</c:forEach>
-						</tbody>
-					</table>
-					<b>Total Add Ons Cost:</b>
-					<input type="text" name="total" class="form-control" id="total"
-						readonly="readonly"/><br/><br/>
-					<input class="btn btn-info" type="submit" value="Continue Booking" />
-				</form:form>
-			</div>
-		</div>
+<body onload="ready()" background="addons_background.jpg">
+	<div class="container" style="color: #fff;">
+		<h1 align="center">
+			<b>Add Ons Selection</b>
+		</h1>
+		<form:form commandName="mybooking" method="post">
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Select</th>
+						<th>AddOns Type</th>
+						<th>AddOns Cost</th>
+						<th>Quantity</th>
+					</tr>
+				</thead>
+				<tbody>
+					<c:forEach items="${addonslist}" var="x">
+						<tr>
+							<td><input type="checkbox" onclick="calculate(this)"
+								value="${x.addonscost}" /></td>
+							<td>${x.addonstype}</td>
+							<td>${x.addonscost}</td>
+							<td><input type="number" style="color: #000;"
+								onchange="quantity(this)" /></td>
+						</tr>
+					</c:forEach>
+				</tbody>
+			</table>
+			<b>Total Add Ons Cost:</b>
+			<input type="text" name="total" class="form-control" id="total"
+				readonly="readonly" />
+			<br />
+			<br />
+			<input class="btn btn-info" type="submit" value="Continue Booking" /><br/>
+		</form:form>
 	</div>
 </body>
 </html>

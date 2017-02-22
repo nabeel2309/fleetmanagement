@@ -6,4 +6,5 @@ public interface HubDAO
 {
 	public List<Hub> getHubs(Booking b);
 	public List<Hub> getRHubs(Booking b);
+	public Hub getHub(int hubid);
 }

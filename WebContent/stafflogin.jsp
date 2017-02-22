@@ -13,20 +13,14 @@
 	src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script
 	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<style type="text/css">
-#bgimg {
-	background-image: url('login_background.jpg');
-	color: #FFF;
-}
-</style>
 </head>
 <body onload="ready()" background="login_background.jpg">
 
 	<div class="container" style="color: #fff;">
 		<h1 align="center">
-			<b>Login Details</b>
+			<b>Staff Login Page</b>
 		</h1>
-		<form:form commandName="mycustomer" method="post">
+		<form:form method="post" commandName="mystaff">
 			<table class="table">
 				<tbody>
 					<tr>
@@ -40,8 +34,7 @@
 							placeholder="Enter Password" /></td>
 					</tr>
 					<tr>
-						<td><a href="register.do" class="btn btn-info" role="button">Are
-								You New??</a></td>
+						<td></td>
 						<td><input type="submit" class="btn btn-success"
 							value="Login"></td>
 					</tr>

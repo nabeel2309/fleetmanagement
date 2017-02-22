@@ -37,22 +37,19 @@ public class LoginController
 	{		
 		Booking b=(Booking) request.getSession().getAttribute("bookingsession");
 		String uname=request.getParameter("uname");
-		String passwd=request.getParameter("passwd");
+		String passwd=request.getParameter("passwd");		
 		boolean flag=ldao.checkLogin(uname,passwd);
 		if(flag==true)
 		{
 			list=new ArrayList<Customer>();
 			list=cdao.getCustomer(uname, passwd);
 			for(Customer c : list)
-			{
-				b.setCustomerid(c.getCustomerid());
-				bdao.updateCustomerid(b);
-				c.setBookingid(b.getBookingid());
-				cdao.updateBookingId(c);
+			{				
+				request.getSession().setAttribute("customersession", c);
 			}
 			return "redirect:/confirm.do";
 		}
 		else
 			return "login.definition";
-	}		
+	}	
 }

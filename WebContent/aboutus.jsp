@@ -110,7 +110,7 @@
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>Copyright &copy; Safar Inc. 2016. All rights reserved.</p> 
+  <p>Copyright &copy; Safar Inc. 2017. All rights reserved.</p> 
 </footer>
 
 </body>

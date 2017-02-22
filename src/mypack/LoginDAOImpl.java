@@ -40,4 +40,20 @@ public class LoginDAOImpl implements LoginDAO
 		return list;
 	}
 
+	@Override
+	public boolean checkStaff(String staffuname, String staffpasswd)
+	{
+		String query="select k from Staff k where staffuname=? and staffpasswd=?";
+		Object[] queryParam={staffuname, staffpasswd};
+		List slist=template.find(query,queryParam);
+		if(slist.size()==0)
+		{
+			return false;
+		}
+		else
+		{
+			return true;
+		}		
+	}
+
 }

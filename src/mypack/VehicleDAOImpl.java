@@ -21,4 +21,18 @@ public class VehicleDAOImpl implements VehicleDAO
 		list=template.find(query);
 		return list;		
 	}
+	@Override
+	public VehicleCategory getVehicleCategory(int vehiclecategoryid)
+	{
+		VehicleCategory vc=new VehicleCategory();
+		String query="select k from VehicleCategory k where vehiclecategoryid=?";
+		Object[] queryParam={vehiclecategoryid};
+		list=new ArrayList<VehicleCategory>();
+		list=template.find(query, queryParam);
+		for(VehicleCategory v : list)
+		{
+			vc=v;
+		}
+		return vc;
+	}
 }

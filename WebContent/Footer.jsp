@@ -90,7 +90,7 @@
 				</div>
 			</div>
 		</div>						
-				<p>Copyright &copy; Safar Inc. 2016. All rights reserved.</p>
+				<p>Copyright &copy; Safar Inc. 2017. All rights reserved.</p>
 		</div>
 </footer>
 
