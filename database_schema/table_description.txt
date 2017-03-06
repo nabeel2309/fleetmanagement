@@ -1,0 +1,106 @@
+TABLE_NAME
+----------------
+CITY
+HUB
+VEHICLECATEGORY
+ADDONS
+BOOKING
+CUSTOMER
+STAFF
+REGISTER
+
+SQL> desc city;
+ Name                                      Null?    Type
+  ----------------------------------------- -------- --------------
+
+   CID                                       NOT NULL NUMBER(3)
+   CNAME                                              VARCHAR2(20)
+
+SQL> desc hub;
+ Name                                      Null?    Type
+  ----------------------------------------- -------- ---------------
+
+   HUBID                                     NOT NULL NUMBER(3)
+   HUBNAME                                            VARCHAR2(30)
+   HUBADDRESS                                         VARCHAR2(30)
+   CITYNAME                                           VARCHAR2(20)
+   STATENAME                                          VARCHAR2(20)
+   HUBPHONE                                           NUMBER(10)
+
+SQL> desc hub;
+ Name                                      Null?    Type
+  ----------------------------------------- -------- ---------------
+
+   HUBID                                     NOT NULL NUMBER(3)
+   HUBNAME                                            VARCHAR2(30)
+   HUBADDRESS                                         VARCHAR2(30)
+   CITYNAME                                           VARCHAR2(20)
+   STATENAME                                          VARCHAR2(20)
+   HUBPHONE                                           NUMBER(10)
+
+SQL> desc addons;
+ Name                                      Null?    Type
+  ----------------------------------------- -------- -----------
+
+   ADDONSID                                  NOT NULL NUMBER(3)
+   ADDONSTYPE                                NOT NULL VARCHAR2(30
+   ADDONSCOST                                         NUMBER(5)
+
+SQL> desc booking;
+ Name                                      Null?    Type
+  ----------------------------------------- -------- --------------------
+
+   BOOKINGID                                 NOT NULL NUMBER(10)
+   ADDONCOST                                          NUMBER(10)
+   AIRPORTCODE                                        VARCHAR2(255 CHAR)
+   BOOKINGDATE                                        TIMESTAMP(6)
+   CITYNAME                                           VARCHAR2(255 CHAR)
+   CUSTOMERID                                         NUMBER(10)
+   HUBID                                              NUMBER(10)
+   PICKUPDATE                                         TIMESTAMP(6)
+   RAIRPORTCODE                                       VARCHAR2(255 CHAR)
+   RCITYNAME                                          VARCHAR2(255 CHAR)
+   RETURNDATE                                         TIMESTAMP(6)
+   RHUBID                                             NUMBER(10)
+   RSTATENAME                                         VARCHAR2(255 CHAR)
+   STATENAME                                          VARCHAR2(255 CHAR)
+   VEHICLECATEGORYID                                  NUMBER(10)
+
+SQL> desc customer;
+ Name                                      Null?    Type
+  ----------------------------------------- -------- -----------
+
+   CUSTOMERID                                NOT NULL NUMBER(10)
+   BOOKINGID                                          NUMBER(10)
+   REGISTERID                                         NUMBER(10)
+
+SQL> desc staff;
+ Name                                      Null?    Type
+  ----------------------------------------- -------- --------------------
+
+   STAFFID                                   NOT NULL NUMBER(10)
+   STAFFNAME                                          VARCHAR2(255 CHAR)
+   STAFFPASSWD                                        VARCHAR2(255 CHAR)
+   STAFFUNAME                                         VARCHAR2(255 CHAR)
+
+SQL> desc register;
+ Name                                      Null?    Type
+  ----------------------------------------- -------- -------------------
+
+   REGISTERID                                NOT NULL NUMBER(10)
+   CUSTOMERADDRESS                           NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERCITY                              NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERCREDITCARDNUMBER                  NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERCREDITCARDTYPE                    NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERDATEOFBIRTH                                VARCHAR2(255 CHAR)
+   CUSTOMERDRIVINGLICENSEDATE                         VARCHAR2(255 CHAR)
+   CUSTOMERDRIVINGLICENSENUMBER              NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMEREMAILID                           NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERFNAME                             NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERLNAME                             NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERPASSPORTNUMBER                    NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERPHONENO                           NOT NULL VARCHAR2(255 CHAR)
+   CUSTOMERZIPCODE                           NOT NULL VARCHAR2(255 CHAR)
+   PASSWORD                                  NOT NULL VARCHAR2(8 CHAR)
+   USERNAME                                  NOT NULL VARCHAR2(20 CHAR)
+   CONFIRMPASSWORD                                    VARCHAR2(255 CHAR)
