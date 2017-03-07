@@ -1,0 +1,128 @@
+SQL> select * from city;
+
+       CID CNAME
+---------- --------------------
+         1 Mumbai
+         2 Pune
+
+SQL> select * from hub;
+
+     HUBID HUBNAME                        HUBADDRESS
+---------- ------------------------------ ---------------
+CITYNAME             STATENAME              HUBPHONE
+-------------------- -------------------- ----------
+         1 Sahara Inc.                    Marol
+Mumbai               Maharashtra          1234567892
+
+         2 AIR INDIA                      Santa Cruz
+Mumbai               Maharashtra          1234567892
+
+         3 Jet Airways Hub                Thane
+Mumbai               Maharashtra          1234567892
+
+
+     HUBID HUBNAME                        HUBADDRESS
+---------- ------------------------------ ---------------
+CITYNAME             STATENAME              HUBPHONE
+-------------------- -------------------- ----------
+         4 Pune Airport Hub               Pune
+Pune                 Maharashtra          1234567892
+
+         5 Nagpur Airport Hub             Nagpur
+Nagpur               Maharashtra          1234567892
+
+         6 Kota Hubs                      Kota
+Kota                 Rajasthan            1234567895
+
+
+     HUBID HUBNAME                        HUBADDRESS
+---------- ------------------------------ ---------------
+CITYNAME             STATENAME              HUBPHONE
+-------------------- -------------------- ----------
+         7 Maharaja Travels               Jaipur
+Jaipur               Rajasthan            1234567895
+
+         8 Maharaja Travels               Jaipur
+Jodhpur              Rajasthan            1234567895
+
+         9 Gujarat Motors                 Ahmedabad
+Ahmedabad            Gujarat              1234567890
+
+
+     HUBID HUBNAME                        HUBADDRESS
+---------- ------------------------------ ---------------
+CITYNAME             STATENAME              HUBPHONE
+-------------------- -------------------- ----------
+        10 Gujarat Motors                 Surat
+Surat                Gujarat              1234567890
+
+        11 Gujarat Motors                 Gandhinagar
+Gandhinagar          Gujarat              1234567890
+
+        12 Sahara Delhi Inc.              New Delhi
+New Delhi            Delhi                1234567894
+
+
+     HUBID HUBNAME                        HUBADDRESS
+---------- ------------------------------ ---------------
+CITYNAME             STATENAME              HUBPHONE
+-------------------- -------------------- ----------
+        13 AIR INDIA                      New Delhi
+New Delhi            Delhi                1234567894
+
+        14 Jet King Hub                   New Delhi
+New Delhi            Delhi                1234567894
+
+        15 Golden Temple Hub              Amritsar
+Amritsar             Punjab               1234567891
+
+
+     HUBID HUBNAME                        HUBADDRESS
+---------- ------------------------------ ---------------
+CITYNAME             STATENAME              HUBPHONE
+-------------------- -------------------- ----------
+        16 Sahara Chandigarh              Chandigarh
+Chandigarh           Punjab               1234567891
+
+        17 Patiala Hubs Ltd.              Patiala
+Patiala              Punjab               1234567891
+
+
+17 rows selected.
+
+
+SQL> select * from vehiclecategory;
+
+VEHICLECATEGORYID VEHICLECATEGORYDESC            IMAGEPATTERN
+----------------- ------------------------------ --------------------
+ DAILYRATE WEEKLYRATE MONTHLYRATE
+---------- ---------- -----------
+                1 Small Car                      vsmall.png
+       500       3200       12500
+
+                2 Sedan                          vsedan.png
+       750       5000       21000
+
+                3 SUV                            vsuv.png
+      1000       6500       27000
+
+
+VEHICLECATEGORYID VEHICLECATEGORYDESC            IMAGEPATTERN
+----------------- ------------------------------ --------------------
+ DAILYRATE WEEKLYRATE MONTHLYRATE
+---------- ---------- -----------
+                4 Sports Car                     vsport.png
+      1000       6500       27000
+
+                5 Luxury Car                     vluxury.png
+      2000      13000       50000
+
+SQL> select * from addons;
+
+  ADDONSID ADDONSTYPE                     ADDONSCOST
+---------- ------------------------------ ----------
+         1 Child Car Seat                       1000
+         2 Additional First Aid Box             1500
+         3 Camping Kit                          1750
+         4 Trekking Kit                         2000
+         5 Portable Suitcase                     750
